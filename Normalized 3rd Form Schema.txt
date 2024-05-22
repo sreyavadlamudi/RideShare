@@ -1,0 +1,28 @@
+﻿User Table:
+* UserID(Primary Key)
+* Returning
+* New
+* Name
+* Email
+* Password
+* Rating(for the drivers)
+
+
+Driver Table:
+* DriverID(Primary Key)
+* DriverMode
+* UserID(Foreign Key which is referring to the UserID in the User Table)
+* Rating(given to the drivers)
+
+
+Ride Table:
+* RiderID(Primary Key)
+* DriverID(Foreign Key which is referring to the DriverID in the Driver Table)
+* RiderID(Foreign Key which is referring to the RiderID in the Rider Table)
+
+
+Rider Table:
+* RideID(Primary Key)
+* UserID(Foreign Key which is referring to the UserID in the User Table)
+* Pickup Location
+* Dropoff Location
